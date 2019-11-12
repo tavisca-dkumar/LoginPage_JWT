@@ -1,0 +1,25 @@
+<app-tool-bar></app-tool-bar>
+<div class="loginlayout">
+    <mat-card class="mat-card">
+        <mat-card-content>
+            <form class="form">
+                <mat-error *ngIf="error">invalid Username or password</mat-error>
+                <mat-form-field>
+                    <input matInput [(ngModel)]="username" placeholder="username"  type="text" name="username">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput [(ngModel)]="password" placeholder="password"  type="password" name="password">
+                </mat-form-field>
+                <mat-checkbox class="checkbox">remember me</mat-checkbox>
+                <div class="forgot">
+                    <a href="#">forgot password?</a>
+                </div>
+                <button mat-raised-button (click)=checkLogin() class="button" >Login</button>
+                <div class="registerpath">
+                        <label>Don't have a account?</label>
+                        <a href="#" class="registerlink">register</a>
+                </div>   
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

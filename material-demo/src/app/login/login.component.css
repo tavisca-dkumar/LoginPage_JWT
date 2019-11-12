@@ -1,0 +1,54 @@
+.loginlayout{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;   
+}
+
+.mat-card{
+    width:30%;
+    /* background: transparent; */
+    /* z-index: 2; */
+}
+
+.checkbox{
+    margin-top: 0.9%;
+    margin-left: 0.7%;
+    margin-bottom: 3%;
+}
+
+
+.button{
+    color: white;
+    font-size: x-large;
+    width:100%;
+    margin-top: 2%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    background-color: rgb(66, 103, 178);
+}
+
+.registerpath{
+    display: block;
+    margin-left: 23%;
+    margin-top: 3%;
+}
+
+.forgot{
+    display:inline;
+    /* margin-top: 2%; */
+    margin-left: 43%;
+}
+
+.mat-form-field{
+    display: block;
+    margin: 1%;
+    font-size: large;  
+}
+
+.check{
+    display:flex;
+}
+
+/* .space{
+    flex:3 1 auto;
+} */

@@ -1,0 +1,12 @@
+<mat-toolbar style="background-color: rgb(66, 103, 178); color: white;" class="toolbar" >
+    app
+    <span class="space"></span>
+    <a *ngIf="!loggedIn" mat-button  routerLink="/login">Login</a>
+    <button *ngIf="!loggedIn" mat-button>register</button>
+    <button *ngIf="loggedIn" mat-button [matMenuTriggerFor]="user">{{username}}</button>
+    <mat-menu #user="matMenu">
+        <button mat-menu-item >View Profile</button>
+        <a  mat-button routerLink="/logout">Logout</a>
+    </mat-menu>
+    
+</mat-toolbar>
